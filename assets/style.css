@@ -1,0 +1,185 @@
+:root {
+  --b_tras: #2484b19f;
+  --black: #1a1818;
+  --sun: #ffdf00;
+  --white: #e4e0e0;
+  --white_p: #e4e0e0d2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #0794d5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%230794D5'/%3E%3Cstop offset='1' stop-color='%232EADA1'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  animation: blur 3s;
+}
+
+.weather_page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#input_city {
+  background: var(--b_tras);
+  border: none;
+  border-radius: 3px;
+  color: var(--white_p);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 10px 0;
+  outline: none;
+  padding: 15px;
+  transition: width 1s;
+  width: 80vw;
+}
+
+#input_city::placeholder,
+#input_city:focus {
+  color: var(--white_p);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.weather_today {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  transition: width 1s;
+  width: 80vw;
+}
+
+.weather_data {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.weather_city {
+  font-size: 1.8rem;
+}
+
+.weather_day {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.weather_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.weather_detail p {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.weather_humidity::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cg%20fill%3D%22%23e4e0e0%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M7.21.8C7.69.295%208%200%208%200c.109.363.234.708.371%201.038c.812%201.946%202.073%203.35%203.197%204.6C12.878%207.096%2014%208.345%2014%2010a6%206%200%200%201-12%200C2%206.668%205.58%202.517%207.21.8zm.413%201.021A31.25%2031.25%200%200%200%205.794%203.99c-.726.95-1.436%202.008-1.96%203.07C3.304%208.133%203%209.138%203%2010c0%200%202.5%201.5%205%20.5s5-.5%205-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75%205.11%208.5%203.72%207.623%201.82z%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M4.553%207.776c.82-1.641%201.717-2.753%202.093-3.13l.708.708c-.29.29-1.128%201.311-1.907%202.87l-.894-.448z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 26px 31px;
+  content: "";
+  display: inline-block;
+  height: 35px;
+  vertical-align: middle;
+  width: 35px;
+}
+
+.weather_wind::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221.07em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%2017%2016%22%3E%3Cg%20fill%3D%22%23e4e0e0%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M10.938%2015.299c0%20.352-1.058.639-1.442.639c-.385%200-1.442-.287-1.442-.639l.744-7.592c0-.353.313-.639.698-.639c.385%200%20.698.286.698.639l.744%207.592z%22%2F%3E%3Cpath%20d%3D%22M9.974%203.498c0%20.28-.21.506-.468.506c-.26%200-.469-.226-.469-.506V.568c0-.279.209-.506.469-.506c.258%200%20.468.227.468.506v2.93z%22%2F%3E%3Cpath%20d%3D%22M4.844%208.939c-.265.183-.602.152-.756-.067c-.15-.219-.061-.547.203-.729l2.771-1.92c.264-.182.603-.153.755.066c.152.22.062.547-.203.73l-2.77%201.92z%22%2F%3E%3Cpath%20d%3D%22M14.712%207.949a.57.57%200%200%201%20.188.783a.57.57%200%200%201-.791.154l-2.836-1.823a.57.57%200%200%201-.188-.784a.57.57%200%200%201%20.789-.153l2.838%201.823z%22%2F%3E%3Cpath%20d%3D%22M9%205h.906v.938H9z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 26px 23px;
+  content: "";
+  display: inline-block;
+  height: 27px;
+  vertical-align: middle;
+  width: 36px;
+}
+
+.weather_pressure::before {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%221.07em%22%20height%3D%221em%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%20viewBox%3D%220%200%201024%20960%22%3E%3Cpath%20d%3D%22M512%204Q408%204%20313.5%2044.5t-163%20109T41.5%20317T1%20516q0%20132%2063.5%20247T241%20949q11%207%2024%204t20-14t4-24t-14-20q-81-51-134-129l34-20q11-6%2014.5-19t-3-24.5t-19.5-15t-24%203.5l-34%2019q-18-38-29-79t-14-84h35q14%200%2023-9.5t9-22.5t-9-22.5t-23-9.5H66q6-87%2045-165l32%2019q7%204%2016%204q18%200%2027-16q7-11%203.5-24T175%20282l-32-19q49-71%20120-119l18%2031q9%2016%2028%2016q8%200%2016-4q5-3%209-8.5t5.5-11t1-12T336%20143l-18-31q38-18%2078.5-28.5T479%2069v40q0%2014%209.5%2023t23%209t22.5-9t9-23V69q87%206%20165%2044l-18%2030q-1%203-2%205.5t-1.5%205.5t-.5%205.5t.5%205.5t1.5%205.5t2.5%205t3%204.5t3.5%204t5%203l4%202l4%201.5l4%20.5h4q4%200%208-1t7.5-3t7-5t5.5-7l17-30q71%2049%20119%20119l-30%2018q-6%203-9.5%208t-5.5%2011t-1%2012.5t4%2011.5q5%208%2012.5%2012t15.5%204q4%200%208-1t8-3l30-17q38%2077%2044%20164h-35q-13%200-22.5%209.5T891%20516t9.5%2022.5T923%20548h35q-6%2085-42%20161l-32-18q-12-7-24.5-3.5T840%20703q-3%205-4%2011.5t1%2012.5t5.5%2011t9.5%208l32%2019q-54%2080-138%20132q-11%207-14%2019.5t4%2024.5q3%204%207.5%207.5t9.5%205.5t10%202q9%200%2017-5q114-70%20178.5-185.5T1023%20515q0-103-40.5-198t-109-163.5t-163-109T512%204zm236%20412q8-5%2012-12.5t4-15.5t-4-16q-7-11-19.5-14.5T716%20360L542%20461q-15-9-31-9q-26%200-45%2019t-19%2045q0%2017%208.5%2032t23.5%2023.5t32%208.5q26%200%2045-19t19-45z%22%20fill%3D%22%23e4e0e0%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 26px 23px;
+  content: "";
+  display: inline-block;
+  height: 27px;
+  vertical-align: middle;
+  width: 36px;
+}
+
+.weather_img {
+  margin: 10px 0;
+}
+
+.weather_img svg {
+  height: 130px;
+  width: 130px;
+}
+
+.temperature {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.weather_forcast_all {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  transition: width 1s;
+  width: 80vw;
+}
+
+.weather_forcast {
+  align-items: center;
+  background-color: var(--b_tras);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  justify-content: center;
+  min-width: 144px;
+  width: 16vw;
+  flex-grow: 1;
+}
+
+.weather_img_f svg {
+  height: 80px;
+  width: 80px;
+}
+
+.weather_day_f {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.temperature_f {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+@keyframes blur {
+  from {
+    filter: blur(10px);
+  }
+  to {
+    filter: blur(0);
+  }
+}

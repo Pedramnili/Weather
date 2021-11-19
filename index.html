@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="shortcut icon" href="https://api.iconify.design/fluent/time-and-weather-24-filled.svg?color=yellow"
+        type="image/x-icon">
+    <title>Weather</title>
 </head>
+
 <body>
-    
+    <div class="weather_page">
+        <input type="search" list="suggestion" id="input_city" placeholder="Your City" onfocus="(this.placeholder='')"
+            onblur="(this.placeholder='Your City')">
+        <datalist id="suggestion"></datalist>
+        <div class="weather_today">
+            <div class="weather_data">
+                <h2 class="weather_city">City</h2>
+                <p class="weather_day">Day</p>
+                <div class="weather_detail">
+                    <p class="weather_humidity"><span class="value">45</span>%</p>
+                    <p class="weather_wind"><span class="value">North, 5.14</span>m/s</p>
+                    <p class="weather_pressure"><span class="value">1009</span>hPa</p>
+                </div>
+            </div>
+            <figure class="weather_img">
+                <span class="iconify" data-icon="fluent:weather-sunny-16-filled" style="color: yellow;"></span>
+            </figure>
+            <div class="temperature"><span class="value">+29</span>&deg;C</div>
+        </div>
+        <div class="weather_forcast_all">
+            <article class="weather_forcast">
+                <figure class="weather_img_f"><span class="iconify" data-icon="fluent:weather-sunny-16-filled"
+                        style="color: yellow;"></span>
+                </figure>
+                <h3 class="weather_day_f">Day</h3>
+                <div class="temperature_f"><span class="value">+27</span>&deg;C</div>
+            </article>
+            <article class="weather_forcast">
+                <figure class="weather_img_f"><span class="iconify" data-icon="fluent:weather-sunny-16-filled"
+                        style="color: yellow;"></span>
+                </figure>
+                <h3 class="weather_day_f">Day</h3>
+                <div class="temperature_f"><span class="value">+27</span>&deg;C</div>
+            </article>
+            <article class="weather_forcast">
+                <figure class="weather_img_f"><span class="iconify" data-icon="fluent:weather-sunny-16-filled"
+                        style="color: yellow;"></span>
+                </figure>
+                <h3 class="weather_day_f">Day</h3>
+                <div class="temperature_f"><span class="value">+27</span>&deg;C</div>
+            </article>
+            <article class="weather_forcast">
+                <figure class="weather_img_f"><span class="iconify" data-icon="fluent:weather-sunny-16-filled"
+                        style="color: yellow;"></span>
+                </figure>
+                <h3 class="weather_day_f">Day</h3>
+                <div class="temperature_f"><span class="value">+27</span>&deg;C</div>
+            </article>
+            <article class="weather_forcast">
+                <figure class="weather_img_f"><span class="iconify" data-icon="fluent:weather-sunny-16-filled"
+                        style="color: yellow;"></span>
+                </figure>
+                <h3 class="weather_day_f">Day</h3>
+                <div class="temperature_f"><span class="value">+27</span>&deg;C</div>
+            </article>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
+
+
 </html>
