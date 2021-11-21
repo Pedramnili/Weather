@@ -84,7 +84,7 @@ let updateWeatherForcast = (days) => {
 };
 
 let updateWeather = (data) => {
-  city.textContent = `${data.name} ,${data.sys.country}`;
+  city_title.textContent = `${data.name} ,${data.sys.country}`;
   day.textContent = dayOfWeek(data.dt * 1000);
   humidity.textContent = data.main.humidity;
   pressure.textContent = data.main.pressure;
