@@ -1,28 +1,28 @@
 // Variables
-let inputCity = document.querySelector("#input_city");
-let city = document.querySelector(".weather_city");
+let city = document.querySelector("#input_city");
+let city_title = document.querySelector(".weather_city");
 let day = document.querySelector(".weather_day");
 let humidity = document.querySelector(".weather_humidity>.value");
 let wind = document.querySelector(".weather_wind>.value");
 let pressure = document.querySelector(".weather_pressure>.value");
 let temperature = document.querySelector(".temperature>.value");
-let forcast_all = document.querySelector(".weather_forcast_all");
+let forcasts = document.querySelector(".weather_forcast_all");
 let weather_icon = document.querySelector(".weather_img");
 let suggestions = document.querySelector("#suggestion");
-let weatherAPIkey = `2c05e25a4032e7e137acb3ad30635b7a`;
-let baseUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${weatherAPIkey}&units=metric`;
-let baseUrl_Forcast = `https://api.openweathermap.org/data/2.5/forecast?appid=${weatherAPIkey}&units=metric`;
+let keyAPI = `2c05e25a4032e7e137acb3ad30635b7a`;
+let baseUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${keyAPI}&units=metric`;
+let baseUrl_forcast = `https://api.openweathermap.org/data/2.5/forecast?appid=${keyAPI}&units=metric`;
 let baseUrl_city = `https://api.teleport.org/api/cities/?search=`;
 
 // Events
-inputCity.addEventListener("keydown", async (e) => {
+city.addEventListener("keydown", async (e) => {
   if (e.keyCode === 13) {
-    pageUp(inputCity.value);
+    pageUp(city.value);
   }
 });
 
-inputCity.addEventListener("input", async (e) => {
-  let url = `${baseUrl_city}${inputCity.value}`;
+city.addEventListener("input", async (e) => {
+  let url = `${baseUrl_city}${city.value}`;
   let response = await (await fetch(url)).json();
   suggestions.innerHTML = "";
   let cities = response._embedded["city:search-results"];
@@ -38,7 +38,8 @@ inputCity.addEventListener("input", async (e) => {
 // Functions
 
 let weatherCityForcast = async (city) => {
-  let url = baseUrl_Forcast + `&q=${city}`;
+  let cityString = stringCity(city);
+  let url = baseUrl_forcast + `&q=${cityString}`;
   let weather = await (await fetch(url)).json();
   let list_forcast = weather.list;
   let array_forcast = [];
@@ -54,14 +55,7 @@ let weatherCityForcast = async (city) => {
 };
 
 let weatherCity = async (city) => {
-  let cityString;
-  if (city.includes(",")) {
-    cityString =
-      city.substring(0, city.indexOf(",")) +
-      city.substring(city.lastIndexOf(","));
-  } else {
-    cityString = city;
-  }
+  let cityString = stringCity(city);
   let url = baseUrl + `&q=${cityString}`;
   let response = await fetch(url);
   if (response.status !== 200) {
@@ -73,9 +67,9 @@ let weatherCity = async (city) => {
 };
 
 let updateWeatherForcast = (days) => {
-  forcast_all.innerHTML = "";
+  forcasts.innerHTML = "";
   days.forEach((arr_day) => {
-    forcast_all.insertAdjacentHTML(
+    forcasts.insertAdjacentHTML(
       "beforeend",
       `<article class="weather_forcast">
           <figure class="weather_img_f"> ${updateIcon(arr_day.weather[0].id)}
@@ -156,5 +150,17 @@ let pageUp = async (city) => {
   updateWeather(city_input);
   updateWeatherForcast(city_input_forcast);
 };
+
+let stringCity = (city) => {
+  let cityString;
+  if (city.includes(",")) {
+    cityString =
+      city.substring(0, city.indexOf(",")) +
+      city.substring(city.lastIndexOf(","));
+  } else {
+    cityString = city;
+  }
+  return cityString
+}
 
 pageUp("Tehran");
