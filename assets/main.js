@@ -47,7 +47,7 @@ let weatherCityForcast = async (city) => {
   list_forcast.forEach((day) => {
     let days = new Date(day.dt_txt.replace(" ", "T"));
     let hours = days.getHours();
-    if (hours === 12) {
+    if (hours === 0) {
       array_forcast.push(day);
     }
   });
