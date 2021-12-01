@@ -165,7 +165,7 @@ body {
 
 .weather_day_f {
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin: 15px 0;
 }
