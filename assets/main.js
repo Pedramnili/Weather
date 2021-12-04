@@ -12,7 +12,7 @@ let suggestions = document.querySelector("#suggestion");
 let keyAPI = `2c05e25a4032e7e137acb3ad30635b7a`;
 let baseUrl = `https://api.openweathermap.org/data/2.5/weather?appid=${keyAPI}&units=metric`;
 let baseUrl_forcast = `https://api.openweathermap.org/data/2.5/forecast?appid=${keyAPI}&units=metric`;
-let baseUrl_city = `https://api.teleport.org/api/cities/?search=`;
+let baseUrl_city = `https://api.teleport.org/api/cities/?search= `;
 
 // Events
 city.addEventListener("keydown", async (e) => {
