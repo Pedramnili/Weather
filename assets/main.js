@@ -164,8 +164,3 @@ let stringCity = (city) => {
 }
 
 pageUp("Tehran");
-
-console.log("test");
-
-
-console.log("master");
